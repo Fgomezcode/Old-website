@@ -1,24 +1,129 @@
+/* TAG SELECTORS*/
 body {
-  background-color: lightcyan;
+  background-color: #cec9cc;
+  padding: 5%;
 }
 
-hr{
-  height: 0;
-  width: 10%;
-  color: grey;
-  border-style: dotted none none none;
-  border-width: 5px;
+a{
+    text-decoration: none;
 }
 
-img{
-  height: 20%;
-  border-radius: 50%;
+a:visited {
+  color: #4f43ae;
 }
 
-h1{
-  color: #66bfbf;
+a:hover {
+  color:#4f43ae;
 }
 
 h3{
-  color: #66bfff;
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+  text-decoration: underline solid black 2px;
+  text-align: center;
+  margin: 0;
 }
+
+td{
+  padding: 20px;
+}
+
+/* CLASS SELECTORS*/
+.header{
+  background-color: white;
+  left:0;
+  margin-bottom: 10px;
+  padding-top:2%;
+  position:absolute;
+  top:0;
+  width: 100%;
+}
+
+.header_content{
+  background-color: cadetblue;
+  border-style: solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.header_image {
+  display: block;
+  margin: auto;
+  width:150px;
+  height:150px;
+}
+
+.header_title{
+  text-align: center;
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+.header_subtitle{
+  font-size: 1.25em;
+  font-family: monospace;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.nav_menu{
+  background-color: #b5b6e4;
+  border-left: 0;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nav_container{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.nav_link_container{
+  margin: 0 auto;
+  width: 50%;
+  color:#211a21 ;
+  text-align: center;
+}
+
+.nav_link{
+  color:#211a21 ;
+  display: inline;
+  font-family: 'VT323',monospace;
+  font-size: 1.5em;
+  margin: 1rem;
+  text-align: center;
+}
+
+.page_text {
+  background-color: white;
+  border: solid;
+  font-family: 'JetBrains Mono', monospace;
+  margin: auto  ;
+  margin-top: 120px;
+  padding: 20px;
+  text-align: ce;
+  width: 80%;
+}
+
+.page_title{
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+  display: block;
+  margin: 0;
+  padding:0;
+  margin-left: 3%;
+  text-align: left;
+}
+
+
+
+
+
+
+/* ID SELECTORS */
+

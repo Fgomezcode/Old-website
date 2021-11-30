@@ -5,45 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&family=VT323&display=swap" rel="stylesheet">    
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="FGicon.png">
 </head>
+
 <body>
-    <h2>FELIPE GOMEZ</h2>
-    <h3>CONTACT</h3>
 
-    <table >
-        <tr><a href="index.html">-HOME-</a></tr>
-        <tr><a href="resume.html">-RESUME-</a></tr>
-        <tr><a href="contact.html">-CONTACT-</a></tr>
-    </table>
+    <div class="header">
+        <h1 class="header_title">FELIPE GOMEZ VILLALOBOS</h1>
+        <h3 class="header_subtitle">Computer Science Student</h3>
 
-    <hr>
+        <h2 class="page_title">CONTACT</h2>
 
-    <p>Please contact me with any questions, at Felipe@FGomez.Dev <br>or use the form below.<br> Thank you.</p>
-
-    <form class="" action="mailto:Felipe@FGomez.dev" method="post" enctype="text/plain" >
-        <table>
-            <tr>
-                <td><label for="">Name</label></td>
-                <td><input type="text" name="Name"></td>
-            </tr>
-
-            <tr>
-                <td><label for="">Email</label></td>
-                <td><input type="email" name="Email"></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><input type="submit"></td>
-            </tr>
-        </table>        
-    </form>
+        <div class="nav_menu">
+            <div class="nav_container">
+                <div class="nav_link_container">
+                    <a class="nav_link" href="index.html">HOME</a>
+                    <a class="nav_link" href="resume.html">RESUME</a>
+                    <a class="nav_link" href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <div class="page_text">
+       
+        <p>Please send any questions to Felipe@FGomez.dev <br>or use the form below.<br> Thank you.</p>
+
+        <form class="" action="mailto:Felipe@FGomez.dev" method="post" enctype="text/plain" >
+            <table>
+                <tr>
+                    <td><label for="">Name</label></td>
+                    <td><input type="text" name="Name"></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" name="Email"></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>        
+        </form>
+    </div>
 </body>
+
 </html>
