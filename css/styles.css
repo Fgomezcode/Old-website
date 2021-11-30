@@ -1,6 +1,6 @@
 /* TAG SELECTORS*/
 body {
-  background-color: #cec9cc;
+  background-color: #908a99;
   padding: 5%;
 }
 
@@ -17,8 +17,7 @@ a:hover {
 }
 
 h3{
-  font-family: 'VT323', monospace;
-  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;  font-size: 1em;
   text-decoration: underline solid black 2px;
   text-align: center;
   margin: 0;
@@ -56,7 +55,8 @@ td{
 
 .header_title{
   text-align: center;
-  font-family: 'VT323', monospace;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.25em;
   margin: 0;
 }
 
@@ -74,12 +74,13 @@ td{
   border-left: 0;
   margin: auto;
   margin-top: 5px;
-  margin-bottom: 5px;
+  
 }
 
 .nav_container{
   display: block;
-  margin: 0 auto;
+  margin:  auto;
+  padding-top: 8px;
   width: 80%;
 }
 
@@ -93,26 +94,27 @@ td{
 .nav_link{
   color:#211a21 ;
   display: inline;
-  font-family: 'VT323',monospace;
-  font-size: 1.5em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
   margin: 1rem;
   text-align: center;
 }
 
 .page_text {
+  border:4px solid #211a21;
   background-color: white;
-  border: solid;
+  border-radius: 10px;
   font-family: 'JetBrains Mono', monospace;
   margin: auto  ;
-  margin-top: 120px;
+  margin-top: 60px;
   padding: 20px;
   text-align: ce;
   width: 80%;
 }
 
 .page_title{
-  font-family: 'VT323', monospace;
-  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
   display: block;
   margin: 0;
   padding:0;
