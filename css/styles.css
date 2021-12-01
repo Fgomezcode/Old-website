@@ -1,44 +1,43 @@
 /* TAG SELECTORS*/
 body {
   background-color: #908a99;
+  font-family: "JetBrains Mono", monospace;
+
   padding: 5%;
 }
 
-a{
-    text-decoration: none;
-}
-
-a:visited {
-  color: #4f43ae;
+a {
+  text-decoration: none;
 }
 
 a:hover {
-  color:#4f43ae;
+  color: #4f43ae;
 }
 
-h3{
-  font-family: 'Press Start 2P', cursive;  font-size: 1em;
+h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
   text-decoration: underline solid black 2px;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
-td{
-  padding: 20px;
+td {
+  padding: 10px;
 }
 
 /* CLASS SELECTORS*/
-.header{
+.header {
   background-color: white;
-  left:0;
+  left: 0;
   margin-bottom: 10px;
-  padding-top:2%;
-  position:absolute;
-  top:0;
+  padding-top: 2%;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
-.header_content{
+.header_content {
   background-color: cadetblue;
   border-style: solid;
   margin: auto;
@@ -49,83 +48,119 @@ td{
 .header_image {
   display: block;
   margin: auto;
-  width:150px;
-  height:150px;
+  width: 150px;
+  height: 150px;
 }
 
-.header_title{
+.header_title {
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 1.25em;
   margin: 0;
 }
 
-.header_subtitle{
+.header_subtitle {
   font-size: 1.25em;
   font-family: monospace;
   margin: 0;
   text-align: center;
   text-decoration: none;
-
 }
 
-.nav_menu{
+.nav_menu {
   background-color: #b5b6e4;
   border-left: 0;
   margin: auto;
   margin-top: 5px;
-  
 }
 
-.nav_container{
-  display: block;
-  margin:  auto;
+.nav_container {
+  margin: auto;
   padding-top: 8px;
   width: 80%;
 }
 
-.nav_link_container{
+.nav_link_container {
+  padding: 10px;
+  color: #211a21;
   margin: 0 auto;
-  width: 50%;
-  color:#211a21 ;
+  width: 100%;
   text-align: center;
 }
 
-.nav_link{
-  color:#211a21 ;
-  display: inline;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
-  margin: 1rem;
-  text-align: center;
+.nav_link {
+  color: #211a21;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.25em;
+  width: 50%;
+  padding: 20px;
+}
+
+.nav_link_current {
+  width: 1em;
+  height: 1em;
+  color: #4f43ae;
+}
+
+.nav_link_img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.pixel_border {
+  box-shadow: inset 8px 8px 8px #cec9cc, inset -8px -8px 8px #cec9cc,
+    -6px 0 #211a21, 6px 0 #211a21, 0 -6px #211a21, 0 6px #211a21;
 }
 
 .page_text {
-  border:4px solid #211a21;
   background-color: white;
-  border-radius: 10px;
-  font-family: 'JetBrains Mono', monospace;
-  margin: auto  ;
-  margin-top: 60px;
-  padding: 20px;
-  text-align: ce;
+  font-family: "JetBrains Mono", monospace;
+  margin: auto;
+  margin-top: 80px;
+  padding: 3%;
   width: 80%;
 }
 
-.page_title{
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
+.social_menu {
+  background-color: white;
+  box-shadow: inset 8px 8px 8px #cec9cc, inset -8px -8px 8px #cec9cc,
+  -6px 0 #211a21, 6px 0 #211a21, 0 -6px #211a21, 0 6px #211a21;
   display: block;
-  margin: 0;
-  padding:0;
-  margin-left: 3%;
-  text-align: left;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+  width: 20%;
 }
 
+.social_image {
+  height: 40px;
+  margin-right: 5%;
+  padding: 2%;
+  width: 40px;
+}
 
+.email_form{
+ margin-top: 1%;
+}
 
+@media (max-width: 800px) {
+  .nav_link_current {
+    display: none;
+  }
 
+  .page_text {
+    margin-top: 20%;
+  }
 
+  .social_menu {
+    margin-top: 5%;
+    width: 50%;
+  }
 
-/* ID SELECTORS */
-
+  .social_image {
+    width: 40px;
+    height: 40px;
+    padding: 2%;
+    margin-bottom: 5%;
+  }
+}
