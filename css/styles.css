@@ -2,7 +2,7 @@
 body {
   background-color: #908a99;
   font-family: "JetBrains Mono", monospace;
-  padding: 5%;
+  padding: 5em;
 }
 
 
@@ -28,7 +28,7 @@ td {
 
 /* CLASS SELECTORS*/
 .site_content{
-  margin-top: 10%;
+  margin-top: 5em;
 }
 
 .header {
@@ -131,7 +131,7 @@ td {
   -6px 0 #211a21, 6px 0 #211a21, 0 -6px #211a21, 0 6px #211a21;
   display: block;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 1em;
   text-align: center;
   width: 20%;
 }
@@ -147,6 +147,8 @@ td {
  margin-top: 1%;
 }
 
+
+
 @media (max-width: 600px) {
   .nav_link_current {
     display: none;
@@ -156,7 +158,7 @@ td {
   }
  
   .social_menu {
-    margin-top: 5%;
+    margin-top: 5em;
     width: 50%;
   }
 
@@ -167,26 +169,3 @@ td {
     margin-bottom: 5%;
   }
 }
-
-@media (max-width: 500px) {
-  .nav_link_current {
-    display: none;
-  }
-
-  .site_content{
-    margin-top: 40%;
-  }
- 
-  .social_menu {
-    margin-top: 5%;
-    width: 50%;
-  }
-
-  .social_image {
-    width: 40px;
-    height: 40px;
-    padding: 2%;
-    margin-bottom: 5%;
-  }
-}
-
