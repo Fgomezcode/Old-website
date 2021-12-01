@@ -168,12 +168,13 @@ td {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .nav_link_current {
     display: none;
   }
+
   .site_content{
-    margin-top: 80%;
+    margin-top: 40%;
   }
  
   .social_menu {
