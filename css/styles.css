@@ -115,7 +115,6 @@ td {
 }
 
 .email_form {
-  padding: 2em;
   font-family: "Press Start 2P", cursive;
 }
 
@@ -125,8 +124,6 @@ td {
   width: 100px;
   height: 50px;
 }
-
-
 
 .nav_menu {
   background-color: #b5b6e4;
@@ -141,10 +138,11 @@ td {
 }
 
 .nav_link {
+  display: inline;
   color: #211a21;
   font-family: "Press Start 2P", cursive;
   font-size: 1em;
-  width: 3%;
+  width: 30%;
   padding: 8px;
 }
 
@@ -189,7 +187,6 @@ td {
       padding-bottom: 100px;
   }
 
-  .nav_link_img{display: none;}
 }
 
 @media only screen and (max-width: 460px) {
@@ -208,6 +205,5 @@ td {
     padding-left: 20px;
     padding-bottom: 100px;
   }
-.nav_link_img{display: none;}
-  
+
 }
