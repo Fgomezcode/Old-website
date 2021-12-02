@@ -8,7 +8,8 @@
    "main main main"
    "spacer1 socials spacer2"
    ;
-  gap: 1em;
+  gap: 3em;
+  
   width: 100%;
 }
 
@@ -170,6 +171,25 @@ td {
       "main"
       "socials"
       ;
+  }
+
+  .nav_link_current{
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width:1080px) {
+  .container{
+      grid-template-columns: 2fr;
+      grid-template-rows: .1fr .5fr 0.01fr ;
+      grid-template-areas: 
+      "nav"
+      "main"
+      "socials"
+      ;
+      gap: 2rem;
   }
 
   .nav_link_current{
