@@ -1,10 +1,47 @@
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr .5fr 1fr ;
+  grid-template-rows: .01fr .3fr .01fr ;
+  grid-template-areas:
+   "nav nav nav"
+   "main main main"
+   "spacer1 socials spacer2"
+   ;
+  gap: 1em;
+  width: 100%;
+}
+
+nav{
+  background-color: white;
+  grid-area:nav;
+  padding-top: .5em;
+}
+
+main{
+  background-color: white;
+  grid-area: main;
+  padding: 1rem;
+}
+
+
+#spacer1{
+  grid-area: spacer1;
+}
+#spacer2{
+  grid-area: spacer2;
+}
+#socials{
+  text-align: center;
+  background-color: white;
+  grid-area: socials;
+}
+
 /* TAG SELECTORS*/
 body {
   background-color: #908a99;
   font-family: "JetBrains Mono", monospace;
-  padding: 5em;
 }
-
 
 a {
   text-decoration: none;
@@ -27,19 +64,6 @@ td {
 }
 
 /* CLASS SELECTORS*/
-.site_content{
-  margin-top: 5em;
-}
-
-.header {
-  background-color: white;
-  left: 0;
-  margin-bottom: 10px;
-  padding-top: 2%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
 
 .header_content {
   background-color: cadetblue;
@@ -73,9 +97,6 @@ td {
 
 .nav_menu {
   background-color: #b5b6e4;
-  border-left: 0;
-  margin: auto;
-  margin-top: 5px;
 }
 
 .nav_container {
@@ -118,11 +139,7 @@ td {
 
 .page_text {
   background-color: white;
-  font-family: "JetBrains Mono", monospace;
-  margin: auto;
-
-  padding: 3%;
-  width: 80%;
+  font-family: "JetBrains Mono", monospace;  
 }
 
 .social_menu {
@@ -143,29 +160,20 @@ td {
   width: 40px;
 }
 
-.email_form{
- margin-top: 1%;
-}
 
+@media only screen and (max-width:650px) {
+  .container{
+      grid-template-columns: 2fr;
+      grid-template-rows: .1fr .5fr 0.01fr ;
+      grid-template-areas: 
+      "nav"
+      "main"
+      "socials"
+      ;
+  }
 
-
-@media (max-width: 600px) {
-  .nav_link_current {
+  .nav_link_current{
     display: none;
   }
-  .site_content{
-    margin-top: 25%;
-  }
- 
-  .social_menu {
-    margin-top: 5em;
-    width: 50%;
-  }
 
-  .social_image {
-    width: 40px;
-    height: 40px;
-    padding: 2%;
-    margin-bottom: 5%;
-  }
 }
