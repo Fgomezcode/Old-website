@@ -1,0 +1,163 @@
+
+:root{
+    --shadowGrey:#676362;
+    --snesDGrey:#67687A;
+    --snesLGrey:#b2b4b2;
+    --gBoyLightGreen:#9bbc0f;
+    --gBoyLightGreen2:#8bac0f;
+    --gBoyDarkGreen: #0f380f;
+    --gBoyDarkGreen2:#306230;
+    --logoColor:#4f43ae;
+}
+
+a:focus {
+   outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+  z-index:auto;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gBoyDarkGreen); 
+  z-index:auto;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gBoyDarkGreen2); 
+}
+
+/*-------------BODY------------------*/
+body{
+    background-color: #9DBCBC;
+    padding: 0 8em;
+    height:90vh;
+    overflow:hidden;
+}
+
+main{    
+    box-shadow: inset 8px 8px 24px var(--snesDGrey), inset -8px 0 24px var(--snesDGrey);
+    background-color:#cec9cc;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-template-rows: 0.01fr 3fr 0.01fr;
+    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-areas:
+    "spacer1  main spacer2"
+    "spacer1  main spacer2"
+    "spacer1 navContainer spacer2"
+    "spacer1 logo spacer2 "
+    ;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5em 3em;
+    width:50% auto;
+    max-width:50em ;  
+}
+
+ul{
+    text-align: left;
+}
+
+#content{
+    height: 25em;
+    overflow: auto;
+    padding: 2em;
+    text-align: center;
+    min-width: 0 auto;
+}
+
+#frame{
+    background-color: var(--gBoyLightGreen);
+    border-right: 100px solid var(--snesDGrey) ;
+    border-left: 100px solid var(--snesDGrey) ;
+    border-top: 30px solid var(--snesDGrey) ;
+    border-bottom: 30px solid var(--snesDGrey);
+    border-radius: 20px;
+    border-bottom-right-radius: 55px;
+    box-shadow: inset 8px 8px 24px var(--gBoyDarkGreen), inset -8px 0 24px var(--gBoyDarkGreen), 4px 4px  black,-4px -4px  black;
+    color: var(--gBoyDarkGreen);
+    font-family: "Press Start 2P";
+    margin: 0 auto;
+    z-index:10;
+    width: 0 auto;
+
+    
+}
+
+#navContainer{
+
+    grid-area: navContainer;
+    margin: 1em;  
+    padding: 0 2em;
+    padding-top: .5em;
+    width: 0 auto;
+}
+
+#navMenu{
+    margin: auto;
+    text-align: left;
+    width: 0 auto;
+
+}
+
+#logo1{
+    font-family:  sans-serif;
+    font-weight:700;
+}
+
+#logo2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+}
+#logoTM{
+    text-justify:auto;
+    font-size:.5em ;
+}
+
+.headerTitle {
+    grid-area: header;
+    text-align: center;
+    font-family: "Press Start 2P";
+    font-size: 1.25em;
+    margin: 0;
+  }
+
+
+.pixel_border {
+    box-shadow: 
+    -6px 0 var(--gBoyDarkGreen), 6px 0 var(--gBoyDarkGreen), 0 -6px var(--gBoyDarkGreen), 0 6px var(--gBoyDarkGreen);
+}
+
+.bottomLogo{
+    margin: 0;
+    color: var(--logoColor);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2em;
+    grid-area: logo;
+    min-width: 25em;
+}
+
+#spacer1{
+    grid-area: spacer1;
+}
+#spacer2{
+    grid-area: spacer2;
+}
+#spacer3{
+    grid-area: spacer3;
+}
+#spacer4{
+    grid-area: spacer4;
+}
