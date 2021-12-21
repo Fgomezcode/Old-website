@@ -92,7 +92,7 @@ img{
   overflow: auto;
 }
 
-#contentHeader{
+#contentHeader, h3{
   text-align: center;
 }
 
@@ -106,7 +106,7 @@ img{
   display:flex;
   flex-direction: row;
   justify-content: center;
-  padding: .1em;
+  padding: .5em;
   margin: 0 1em;  
   margin-bottom:1em;
 }
@@ -117,17 +117,18 @@ img{
 }
 
 .navLink > img{
+  padding-right: .25em;
   image-rendering: auto;
-  width: 32px;
-  height:28px;
+  width: 16px;
+  height:16px;
 }
 
 /*--------------------LOGO-------------------------*/
 #logo{
   width: 100%;
   color: var(--logoColor);
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: italic;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
 }
 
 /*--------------------BUTTONS-------------------------*/
@@ -214,7 +215,7 @@ img{
 
 @media only screen and (max-width: 750px) {
   body{
-    background-color: #9DBCBC;
+    background-color: black;
   }
   
   img{
@@ -249,7 +250,7 @@ img{
     box-shadow: inset 8px 8px 24px var(--gBoyDarkGreen), inset -8px 0 24px var(--gBoyDarkGreen), 4px 4px  black,-4px -4px  black;
     color: var(--gBoyDarkGreen);
     font-family: "Press Start 2P"; 
-    margin-top: 2.5em;
+    margin-top: .5em;
     padding-top: 70%;
     width:80%;
     position: relative;
@@ -282,45 +283,50 @@ img{
     background-color: var(--gBoyLightGreen);
     display:flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 1em;
+    justify-content: space;
+    padding: .25em;
     margin: 0 1em;  
     margin-bottom:1em;
-    height:1em;
+    
   }
   
   .navLink{
     font-size: .75rem;
     margin: 0 .5em;
+    text-align: center;
+
   }
   
   .navLink > img{
-   
+    text-align: center;
     image-rendering: auto;
-    width: 24px;
+    width: 16px;
     height:16px;
+    transform: rotate(90deg);
     
   }
   
   /*--------------------LOGO-------------------------*/
   #logo{
-    padding-top: 1em;
-    padding-bottom:1em;
+    font-size:.8em;
+    padding-left: 1em;
     width: 100%;
     color: var(--logoColor);
-      font-family: 'Nunito Sans', sans-serif;
-      font-style: italic;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
   }
   
   /*--------------------BUTTONS-------------------------*/
   #buttons{
     display: flex;
-    width: 100%;
+    width: 90%;
     display:flex;
     flex-direction:row;
     align-items: center;
     justify-content: flex-start;
     justify-content: space-evenly;
+    padding-bottom: 2em;
+    margin: 0 auto;
   }
   
   #directionalPad{

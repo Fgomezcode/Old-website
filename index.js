@@ -115,7 +115,7 @@ function loadContact(){
 }
 
 function loadHome(){
-    contentHeader.innerHTML = "FELIPE GOMEZ VILLALOBOS";
+    contentHeader.innerHTML = "FELIPE GOMEZ";
     contentHTML.innerHTML = "";
     openSound.play();
     focusIndex = 0; //update the index so that the user can click or use arrows
@@ -221,7 +221,7 @@ function showIcon(index){
     for(let i = 0; i < 3; i++){
         menuIcons[i].src = "images/PointerStill_Blank.png";
     }
-    menuIcons[index].src= "images/PointerStill.png";
+    menuIcons[index].src= "images/RoundUI.png";
 }
 
 function onLoad(){
