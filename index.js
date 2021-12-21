@@ -92,7 +92,7 @@ function loadResume(){
     focusIndex =0;  //update the index so that the user can click or use arrows
     showIcon(focusIndex);
     document.getElementById("content").scrollTo(0,0);
-
+    document.getElementById("homeImage").hidden =true;
 }
 
 function loadAbout(){
@@ -102,6 +102,8 @@ function loadAbout(){
     focusIndex =1; //update the index so that the user can click or use arrows
     showIcon(focusIndex);
     document.getElementById("content").scrollTo(0,0);
+    document.getElementById("homeImage").hidden =true;
+
 }
 
 function loadContact(){
@@ -111,16 +113,17 @@ function loadContact(){
     focusIndex =2;  //update the index so that the user can click or use arrows
     showIcon(focusIndex);
     document.getElementById("content").scrollTo(0,0);
-
+    document.getElementById("homeImage").hidden =true;
 }
 
 function loadHome(){
-    contentHeader.innerHTML = "FELIPE GOMEZ";
+    contentHeader.innerHTML = '';
     contentHTML.innerHTML = "";
     openSound.play();
     focusIndex = 0; //update the index so that the user can click or use arrows
     showIcon(0);
     document.getElementById("content").scrollTo(0,0);
+    document.getElementById("homeImage").hidden =false;
 
 }
 
