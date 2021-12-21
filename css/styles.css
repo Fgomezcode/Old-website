@@ -1,0 +1,388 @@
+
+:root{
+  --shadowGrey:#676362;
+  --snesDGrey:#67687A;
+  --snesLGrey:#b2b4b2;
+  --gBoyLightGreen:#9bbc0f;
+  --gBoyLightGreen2:#8bac0f;
+  --gBoyActionButton: #810344;
+  --gBoyDarkGreen: #0f380f;
+  --gBoyDarkGreen2:#306230;
+  --logoColor:#4f43ae;
+}
+
+a:focus {
+ outline: none;
+}
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: transparent; 
+z-index:auto;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--gBoyDarkGreen); 
+z-index:auto;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: var(--gBoyDarkGreen2); 
+}
+
+body{
+  background-color: #9DBCBC;
+}
+
+img{
+  image-rendering: pixelated;
+}
+
+.wrapper{
+  box-shadow: inset 8px 8px 24px var(--snesDGrey), inset -8px 0 24px var(--snesDGrey);
+  background-color:#cec9cc;
+  border-radius: 3%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 3em 4em ;
+  padding-bottom:5em;
+  width: 35%;
+  overflow: none;
+}
+
+/*--------------------CONTENT-------------------------*/
+#frame{
+  background-color: var(--gBoyLightGreen);
+  border-right: 5rem solid var(--snesDGrey) ;
+  border-left: 3rem solid var(--snesDGrey) ;
+  border-top: 2rem solid var(--snesDGrey) ;
+  border-bottom: 2rem solid var(--snesDGrey);
+  border-radius: 2%;
+  border-bottom-right-radius: 10%;
+  box-shadow: inset 8px 8px 24px var(--gBoyDarkGreen), inset -8px 0 24px var(--gBoyDarkGreen), 4px 4px  black,-4px -4px  black;
+  color: var(--gBoyDarkGreen);
+  font-family: "Press Start 2P"; 
+  margin-top: 2.5em;
+  padding-top: 70%;
+  width:80%;
+  position: relative;
+     
+}
+
+#content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+  margin: 0 1em ;
+  margin-bottom: 5em;
+  overflow: auto;
+}
+
+#contentHeader{
+  text-align: center;
+}
+
+.pixelBorder {
+  box-shadow: 
+  -.3em 0 var(--gBoyDarkGreen), .3em 0 var(--gBoyDarkGreen), 0 -.3em var(--gBoyDarkGreen), 0 .3em var(--gBoyDarkGreen);
+}
+
+#navMenu{
+  background-color: var(--gBoyLightGreen);
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: .1em;
+  margin: 0 1em;  
+  margin-bottom:1em;
+}
+
+.navLink{
+  font-size: 1rem;
+  margin: 0 .5em;
+}
+
+.navLink > img{
+  image-rendering: auto;
+  width: 32px;
+  height:28px;
+}
+
+/*--------------------LOGO-------------------------*/
+#logo{
+  width: 100%;
+  color: var(--logoColor);
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+}
+
+/*--------------------BUTTONS-------------------------*/
+#buttons{
+  display: flex;
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+}
+
+#directionalPad{
+  margin-top:1em;
+  width: 10em auto;
+  border-radius: 45%;
+  background-color: var(--snesLGrey);
+}
+
+#dpadTop {
+  display: flex;
+  flex-direction: row;
+}
+#dpadMid{
+  display: flex;
+  flex-direction: row;
+}
+#dpadBottom{
+  display: flex;
+  flex-direction: row;
+}
+
+.dpadArrows{
+  width:2em;
+  height:2em;
+}
+
+#buttonSpacer{
+  flex-basis: 30%;
+  height: 3em;
+ 
+}
+
+#actionButtons{
+  font-family: "Press Start 2P"; 
+  transform: rotate(-20deg);
+
+  border-radius: 20%/50%;
+  display:flex;
+  flex-direction: row;
+  background-color: var(--snesLGrey);
+  justify-content: center;
+  padding: .25em;
+}
+
+.abButton{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 5em;
+}
+
+.abImg{
+  width:3em;
+    height:3em;
+}
+
+.abCaption{
+  display:block;
+  color: var(--logoColor);
+  padding-top: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+  body{
+    background-color: #9DBCBC;
+  }
+  
+  img{
+    image-rendering: pixelated;
+  }
+  
+  .wrapper{
+    box-shadow: inset 8px 8px 24px var(--snesDGrey), inset -8px 0 24px var(--snesDGrey);
+    background-color:#cec9cc;
+    border-radius: 3%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+    padding:2em 0;
+    padding-bottom:2em;
+    width: 100%;
+  
+  }
+  
+  /*--------------------CONTENT-------------------------*/
+  #frame{
+    background-color: var(--gBoyLightGreen);
+    border-right: 1rem solid var(--snesDGrey) ;
+    border-left: 1rem solid var(--snesDGrey) ;
+    border-top: 1rem solid var(--snesDGrey) ;
+    border-bottom: 1rem solid var(--snesDGrey);
+    border-radius: 2%;
+    border-bottom-right-radius: 10%;
+    box-shadow: inset 8px 8px 24px var(--gBoyDarkGreen), inset -8px 0 24px var(--gBoyDarkGreen), 4px 4px  black,-4px -4px  black;
+    color: var(--gBoyDarkGreen);
+    font-family: "Press Start 2P"; 
+    margin-top: 2.5em;
+    padding-top: 70%;
+    width:80%;
+    position: relative;
+       
+  }
+  
+  #content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: .9em;
+    text-align: left;
+    margin: 0 .25em ;
+    margin-bottom: 5em;
+    overflow: auto;
+  }
+  
+  #contentHeader{
+    text-align: center;
+  }
+  
+  .pixelBorder {
+    box-shadow: 
+    -.3em 0 var(--gBoyDarkGreen), .3em 0 var(--gBoyDarkGreen), 0 -.3em var(--gBoyDarkGreen), 0 .3em var(--gBoyDarkGreen);
+  }
+  
+  #navMenu{
+    background-color: var(--gBoyLightGreen);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+    margin: 0 1em;  
+    margin-bottom:1em;
+    height:1em;
+  }
+  
+  .navLink{
+    font-size: .75rem;
+    margin: 0 .5em;
+  }
+  
+  .navLink > img{
+   
+    image-rendering: auto;
+    width: 24px;
+    height:16px;
+    
+  }
+  
+  /*--------------------LOGO-------------------------*/
+  #logo{
+    padding-top: 1em;
+    padding-bottom:1em;
+    width: 100%;
+    color: var(--logoColor);
+      font-family: 'Nunito Sans', sans-serif;
+      font-style: italic;
+  }
+  
+  /*--------------------BUTTONS-------------------------*/
+  #buttons{
+    display: flex;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+  }
+  
+  #directionalPad{
+    margin-top:1em;
+    width: 10em auto;
+    border-radius: 45%;
+    background-color: var(--snesLGrey);
+  }
+  
+  #dpadTop {
+    display: flex;
+    flex-direction: row;
+  }
+  #dpadMid{
+    display: flex;
+    flex-direction: row;
+  }
+  #dpadBottom{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dpadArrows{
+    width:2em;
+    height:2em;
+  }
+  
+  #buttonSpacer{
+    flex-basis: 30%;
+    height: 3em;
+   
+  }
+  
+  #actionButtons{
+    font-family: "Press Start 2P"; 
+    transform: rotate(-20deg);
+  
+    border-radius: 20%/50%;
+    display:flex;
+    flex-direction: row;
+    background-color: var(--snesLGrey);
+    justify-content: center;
+    padding: .25em;
+  }
+  
+  .abButton{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 5em;
+  }
+  
+  .abImg{
+    width:3em;
+      height:3em;
+  }
+  
+  .abCaption{
+    display:block;
+    color: var(--logoColor);
+    padding-top: .5em;
+  }
+
+
+}
