@@ -38,30 +38,30 @@ var menuHTML= '<div id="navContainer">'+
 
 var aboutHTML = 
                 '<p >My name is Felipe Gomez'+
-                ' Villalobos, I attend Santiago Canyon College in Orange, California. I am'+
-                'pursuing a degree in Computer Science, and hope to transfer to a'+
-                'four-year university next fall (2022).'+
+                ' Villalobos, I currently attend UC Irvine in California. I am'+
+                'pursuing a degree in Computer Science, and expect to complete my studies Fall 2024'+
                 '</p>'+
                 '<p>'+
-                'My current goal is to develop skills and habits that will increase'+
-                ' internship opportunities.'+
+                'My current goals are to develop skills and habits that will allow me to pursue interships and job opportunities this comming Summer.'+
+                'As well as maintain a competetive GPA and graduate in a timely manner.'+
                 ' </p>'+
                 '<p>'+
                 'I spend the majority of my time studying data structures, making simple'+
                 'command console games in C++, Python and Java as well as making 2D games'+
-                ' using Unity Game Engine. I am also in the process of learning HTML,'+
-                'JavaScript, CSS and making websites for myself and friends.'+
+                ' using Unity Game Engine and 3D games with Unreal Engine.'+
+                ' I also enjoy doing front end web design for friends and family in my spare time.'+
                 ' </p>';
 
 var resumeHTML =
                 '<table>'+
-                ' <tr>'+
-                '<td><strong> Santiago Canyon College</strong></td>'+
-                '<td>GPA: 3.9 - Expected graduation spring 2022</td>'+
+                
+                '<tr>'+
+                '<td><strong>UC Irvine</strong></td>'+
+                '<td>Start date - Fall 2022</td>'+
                 '</tr>'+
                 '<tr>'+
-                '<td><strong>Transfer to 4-year college</strong></td>'+
-                '<td>Start date - Fall 2022</td>'+
+                '<td><strong> Santiago Canyon College</strong></td>'+
+                '<td>2020 - 2022</td>'+
                 '</tr>'+
                 '</table>'+
                 '<h3>Skills</h3>'+
@@ -81,7 +81,7 @@ var resumeHTML =
                 '</ul>';
 
 
-var contactHTML ='<p> Please email Felipe@FGomez.Dev with any questions.</p>';
+var contactHTML ='<p><center>Please email Felipe@FGomez.Dev with any questions.</center> </p>';
 
 
 

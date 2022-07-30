@@ -179,35 +179,71 @@ img{
 #actionButtons{
   font-family: "Press Start 2P"; 
   transform: rotate(-20deg);
-  border-radius: 20%/50%;
   display:flex;
   flex-direction: row;
-  background-color: var(--snesLGrey);
   justify-content: center;
-  padding: .25em;
 }
 
 .abButton{
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  width: 5em;
+  
 }
 
-.abImg{
+.abImgB{
+  align-items: center;
+  background-color: var(--snesLGrey);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
   width:3em;
-    height:3em;
+  height:3em;
+  padding: 1em 1em 1em 2em;
 }
-
+.abImgA{
+  align-items: center;
+  background-color: var(--snesLGrey);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width:3em;
+  height:3em;
+  padding: 1em 2em 1em 1em;
+}
 .abCaption{
   display:block;
   color: var(--logoColor);
   padding-top: .5em;
 }
 
+#startSelectButtons{
+  font-family: "Press Start 2P"; 
+  transform: rotate(0deg);
+  border-radius: 20%/50%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: .25em;
+  padding-bottom: 1rem;
+}
 
+.ssCaption{
+  display:block;
+  color: var(--logoColor);
+  padding-top: .5em;
+  padding-left: .75rem;
+  transform: rotate(-35deg);
+  text-align: right;
+}
 
-
+.startselButton{
+  transform: rotate(-35deg);
+  height: .75rem;
+  width: 4rem;
+  background-color: var(--snesDGrey);
+  border: 5px;
+  border-radius: 50px;
+  box-shadow:  10px black;
+}
 
 @media only screen and (max-width: 1200px) {
   body{
@@ -362,37 +398,74 @@ img{
   #actionButtons{
     font-family: "Press Start 2P"; 
     transform: rotate(-20deg);
-  
-    border-radius: 20%/50%;
     display:flex;
     flex-direction: row;
-    background-color: var(--snesLGrey);
     justify-content: center;
-    padding: .25em;
   }
   
   .abButton{
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 5em;
+    
   }
   
-  .abImg{
+  .abImgB{
+    align-items: center;
+    background-color: var(--snesLGrey);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
     width:3em;
-      height:3em;
+    height:3em;
+    padding: 1em 1em 1em 2em;
   }
   
+  .abImgA{
+    align-items: center;
+    background-color: var(--snesLGrey);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width:3em;
+    height:3em;
+    padding: 1em 2em 1em 1em;
+  }
+
   .abCaption{
     display:block;
     color: var(--logoColor);
     padding-top: .5em;
   }
-
-
+  
+  #startSelectButtons{
+    font-family: "Press Start 2P"; 
+    transform: rotate(0deg);
+    border-radius: 20%/50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: .25em;
+    padding-bottom: 1rem;
+  }
+  
+  .ssCaption{
+    display:block;
+    color: var(--logoColor);
+    padding-top: .5em;
+    padding-left: .75rem;
+    transform: rotate(-35deg);
+    text-align: right;
+  }
+  
+  .startselButton{
+    transform: rotate(-35deg);
+    height: .75rem;
+    width: 4rem;
+    background-color: var(--snesDGrey);
+    border: 5px;
+    border-radius: 50px;
+    box-shadow:  10px black;
+  }
 }
-
-
 
 
 
@@ -551,32 +624,71 @@ img{
   #actionButtons{
     font-family: "Press Start 2P"; 
     transform: rotate(-20deg);
-  
-    border-radius: 20%/50%;
     display:flex;
     flex-direction: row;
-    background-color: var(--snesLGrey);
     justify-content: center;
-    padding: .25em;
   }
   
   .abButton{
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 5em;
+    
   }
   
-  .abImg{
+  .abImgB{
+    align-items: center;
+    background-color: var(--snesLGrey);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
     width:3em;
-      height:3em;
+    height:3em;
+    padding: 1em 1em 1em 2em;
   }
-  
+
+  .abImgA{
+    align-items: center;
+    background-color: var(--snesLGrey);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width:3em;
+    height:3em;
+    padding: 1em 2em 1em 1em;
+  }
+
   .abCaption{
     display:block;
     color: var(--logoColor);
     padding-top: .5em;
   }
-
-
+  
+  #startSelectButtons{
+    font-family: "Press Start 2P"; 
+    transform: rotate(0deg);
+    border-radius: 20%/50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: .25em;
+    padding-bottom: 1rem;
+  }
+  
+  .ssCaption{
+    display:block;
+    color: var(--logoColor);
+    padding-top: .5em;
+    padding-left: .75rem;
+    transform: rotate(-35deg);
+    text-align: right;
+  }
+  
+  .startselButton{
+    transform: rotate(-35deg);
+    height: .75rem;
+    width: 4rem;
+    background-color: var(--snesDGrey);
+    border: 5px;
+    border-radius: 50px;
+    box-shadow:  10px black;
+  }
 }
