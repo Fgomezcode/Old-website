@@ -123,7 +123,7 @@ img{
 .navLink > img{
   padding-right: .25em;
   image-rendering: auto;
-  width: 16px;
+  width: 20px;
   height:16px;
 }
 
@@ -245,7 +245,7 @@ img{
   box-shadow:  10px black;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   body{
     background-color: #9DBCBC;  }
   
@@ -335,9 +335,9 @@ img{
   .navLink > img{
     text-align: center;
     image-rendering: auto;
-    width: 16px;
+    width: 20px;
     height:16px;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     
   }
   
@@ -561,9 +561,9 @@ img{
   .navLink > img{
     text-align: center;
     image-rendering: auto;
-    width: 16px;
+    width: 20px;
     height:16px;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     
   }
   

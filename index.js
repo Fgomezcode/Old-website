@@ -21,7 +21,7 @@ var menuIcons = [resumeIcon, aboutIcon, contactIcon];
 var focusIndex = 0; // index for menu navigation
 
 var navigateSound = new Audio("sounds/navigateSound.wav"); // sound - plays on arrow input
-var openSound = new Audio("sounds/openSound.wav"); // sound - plays on selection
+var openSound = new Audio("sounds/8-bit-kit-whoop.wav"); // sound - plays on selection
 
 var menuHTML= '<div id="navContainer">'+
                 '<table id="navMenu">'+
@@ -39,39 +39,48 @@ var menuHTML= '<div id="navContainer">'+
 var aboutHTML = 
                 '<p >My name is Felipe Gomez'+
                 ' Villalobos, I currently attend UC Irvine in California. I am'+
-                'pursuing a degree in Computer Science, and expect to complete my studies Fall 2024'+
+                ' pursuing a degree in Computer Science, and expect to complete my studies Winter 2025'+
                 '</p>'+
                 '<p>'+
-                'My current goals are to develop skills and habits that will allow me to pursue interships and job opportunities this comming Summer.'+
+                'My current goals are to develop skills and habits that will allow me to pursue interships and job opportunities this comming Summer. '+
                 'As well as maintain a competetive GPA and graduate in a timely manner.'+
                 ' </p>'+
                 '<p>'+
-                'I spend the majority of my time studying data structures, making simple'+
-                'command console games in C++, Python and Java as well as making 2D games'+
-                ' using Unity Game Engine and 3D games with Unreal Engine.'+
-                ' I also enjoy doing front end web design for friends and family in my spare time.'+
+                'I spend the majority of my time studying data structures, making simple '+
+                'games using Unity Game Engine and Unreal Engine.'+
+                ' I also enjoy doing frontend web design for friends and family in my spare time.'+
                 ' </p>';
 
 var resumeHTML =
                 '<table>'+
-                
+                '<tr>'+
+                '<td><strong>Email: </strong></td>'+
+                '<td>Felipe@FGomez.Dev</td>'+
+                '</tr>'+
+                '<tr><td></td></tr>'+
+                '</table>'+
+
+                '<table>'+
                 '<tr>'+
                 '<td><strong>UC Irvine</strong></td>'+
-                '<td>Start date - Fall 2022</td>'+
+                '<td>B.S. Computer Science </td>'+
+                '<td>Expected Graduation 2025</td>'+
                 '</tr>'+
                 '<tr>'+
                 '<td><strong> Santiago Canyon College</strong></td>'+
-                '<td>2020 - 2022</td>'+
+                '<td>A.A. Liberal Arts Math</td>'+
+                '<td>2020-2022'+
                 '</tr>'+
                 '</table>'+
-                '<h3>Skills</h3>'+
-                '<ul>'+
-                '<li>Proficient in C++, Java, Python</li>'+
-                '<li>Experience with HTML, Javascript, Java, XML</li>'+
-                '<li>GitHub</li>'+
-                '<li>Experience with Unity Game Engine - 2D Dungeon Crawler</li>'+
-                '<li>Proficient Artist - Game Art</li>'+
+
+                '<h3>Technical Skills</h3>'+
+                '<ul><strong>LANGUAGES</strong>'+
+                '<li>C++ | Python | Java | HTML CSS</li>'+
                 '</ul>'+
+                '<ul><strong>TOOLS</strong>'+
+                '<li>GitHub | Unity | Unreal | Aseprite</li>'+
+                '</ul>'+
+
                 '<h3>Course Work</h3>'+
                 '<ul>'+
                 '<li>Data Structures and Algorithms</li>'+
@@ -224,7 +233,7 @@ function showIcon(index){
     for(let i = 0; i < 3; i++){
         menuIcons[i].src = "images/PointerStill_Blank.png";
     }
-    menuIcons[index].src= "images/RoundUI.png";
+    menuIcons[index].src= "images/PointerStill.png";
 }
 
 function onLoad(){
