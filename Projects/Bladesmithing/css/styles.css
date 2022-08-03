@@ -1,0 +1,183 @@
+body {
+  background-color: #1b2430;
+  color: white;
+}
+
+#PageInfo {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 20px;
+  text-align: center;
+  word-break: keep-all;
+  width: auto;
+}
+
+#PageInfo h1 {
+  text-align: center;
+  text-decoration: overline underline;
+  color: white;
+}
+
+/*Display Styling*/
+.DisplayDiv {
+  border-radius: 10px;
+  background-color: #5c5470;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  width: auto;
+}
+
+/*Div Styling*/
+.RoundDiv {
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  margin: 0rem 2rem 2rem;
+  animation: dropDown 0.75s ease-in-out forwards 1;
+}
+
+.RoundPrompt {
+  font-size: 2rem;
+}
+
+#roundParams {
+  font-size: 2rem;
+  list-style: none;
+  word-break: keep-all;
+}
+
+#roundOneExtras {
+  font-size: 2rem;
+  list-style: none;
+  justify-content: center;
+  word-break: keep-all;
+}
+
+#ResetDiv {
+  text-align: center;
+  width: auto;
+  height: 3rem;
+  margin: 0rem 4rem 2rem;
+}
+
+/*Button Styling*/
+.actionButton {
+  font-size: 1rem;
+  border-style: solid;
+  font-weight: bolder;
+  height: 4em;
+  width: 16rem;
+  margin: auto;
+  border-radius: 15px;
+}
+
+#resetButton {
+  background-color: red;
+  height: 2rem;
+  width: 8rem;
+}
+#skipButton {
+  background-color: gold;
+  height: 2rem;
+  width: 8rem;
+}
+
+.timerText {
+  text-align: center;
+  color: red;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/*GLOSSARY ----------------------------------------------*/
+
+#GlossaryTable {
+  border-radius: 10px;
+  border-style: solid black;
+  margin: auto;
+}
+
+.GlossaryCell {
+  background-color: #dbd8e3;
+  word-wrap: normal;
+  padding: 1rem;
+  border: 2px solid;
+}
+.GlossaryCell:hover {
+  background-color: lightgray;
+}
+
+/*GLOSSARY LINKS AND HYPERLINKS*/
+a {
+  color: black;
+  font-size: 100%;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+}
+
+/*----------------------------------------------------*/
+h1,
+h2 {
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+
+/*------------------ CHANGING RESOLUTION ----------------------------------------------*/
+/*=====================================================================================*/
+@media only screen and (max-width: 450px) {
+  .RoundPrompt {
+    font-size: 1rem;
+  }
+
+  #roundParams {
+    font-size: 1.5rem;
+    list-style: none;
+    word-break: keep-all;
+  }
+
+  #roundOneExtras {
+    font-size: 1.5rem;
+    list-style: none;
+    word-break: keep-all;
+    text-align: left;
+  }
+
+  .timerText {
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+}

@@ -6,92 +6,96 @@ var contentHeader = document.getElementById("contentHeader");
 var resumeOption = document.getElementById("resumeMenu");
 var aboutOption = document.getElementById("aboutMenu");
 var contactOption = document.getElementById("contactMenu");
+var projectOption = document.getElementById("projectMenu");
 
 // store in array 
-var menuLinks = [resumeOption, aboutOption, contactOption];
+var menuLinks = [resumeOption, aboutOption, contactOption, projectOption];
 
 //focus icons 
 var resumeIcon = document.getElementById("resumeFocus");
 var aboutIcon = document.getElementById("aboutFocus");
 var contactIcon = document.getElementById("contactFocus");
+var projectIcon = document.getElementById("projectFocus");
 
 //store img locations in array
-var menuIcons = [resumeIcon, aboutIcon, contactIcon];
+var menuIcons = [resumeIcon, aboutIcon, contactIcon, projectIcon];
 
 var focusIndex = 0; // index for menu navigation
 
 var navigateSound = new Audio("sounds/navigateSound.wav"); // sound - plays on arrow input
 var openSound = new Audio("sounds/8-bit-kit-whoop.wav"); // sound - plays on selection
 
-var menuHTML= '<div id="navContainer">'+
-                '<table id="navMenu">'+
-                '<tr>'+
-                '<td id="resumeFocus"></td>'+
-                '<td onclick="loadResume()" id="resumeMenu"></td>'+
-                '<td id="aboutFocus"></td>'+
-                '<td onclick="loadAbout()" id="aboutMenu"></td>'+
-                '<td id="contactFocus"></td>'+
-                '<td onclick="loadContact()" id="contactMenu"></td>'+
-                ' </tr>'+
-                '</table>'+
-                '</div>';
+var menuHTML= ` <div id="navContainer">
+                <table id="navMenu">
+                <tr>
+                <td id="resumeFocus"></td>'+
+                <td onclick="loadResume()" id="resumeMenu"></td>
+                <td id="aboutFocus"></td>
+                <td onclick="loadAbout()" id="aboutMenu"></td>
+                <td id="contactFocus"></td>
+                <td onclick="loadContact()" id="contactMenu"></td>
+                <td id="projectFocus"></td>
+                <td onclick="loadProject()" id="projectMenu"></td>
+                </tr>
+                </table>
+                </div>`;
 
-var aboutHTML = 
-                '<p >My name is Felipe Gomez'+
-                ' Villalobos, I currently attend UC Irvine in California. I am'+
-                ' pursuing a degree in Computer Science, and expect to complete my studies Winter 2025'+
-                '</p>'+
-                '<p>'+
-                'My current goals are to develop skills and habits that will allow me to pursue interships and job opportunities this comming Summer. '+
-                'As well as maintain a competetive GPA and graduate in a timely manner.'+
-                ' </p>'+
-                '<p>'+
-                'I spend the majority of my time studying data structures, making simple '+
-                'games using Unity Game Engine and Unreal Engine.'+
-                ' I also enjoy doing frontend web design for friends and family in my spare time.'+
-                ' </p>';
+var aboutHTML = `<p >My name is Felipe Gomez'+
+                Villalobos, I currently attend UC Irvine in California. I am
+                pursuing a degree in Computer Science, and expect to complete my studies Winter 2025
+                </p>
+                <p>
+                My current goals are to develop skills and habits that will allow me to pursue interships and job opportunities this comming Summer. 
+                As well as maintain a competetive GPA and graduate in a timely manner.
+                </p>
+                <p>
+                I spend the majority of my time studying data structures, making simple 
+                games using Unity Game Engine and Unreal Engine.'+
+                I also enjoy doing frontend web design for friends and family in my spare time.
+                </p>`;
 
 var resumeHTML =
-                '<table>'+
-                '<tr>'+
-                '<td><strong>Email: </strong></td>'+
-                '<td>Felipe@FGomez.Dev</td>'+
-                '</tr>'+
-                '<tr><td></td></tr>'+
-                '</table>'+
+                `<table>
+                 <tr>
+                 <td><strong>Email: </strong></td>
+                 <td>Felipe@FGomez.Dev</td>
+                 </tr>
+                 <tr><td></td></tr>
+                 </table>
 
-                '<table>'+
-                '<tr>'+
-                '<td><strong>UC Irvine</strong></td>'+
-                '<td>B.S. Computer Science </td>'+
-                '<td>Expected Graduation 2025</td>'+
-                '</tr>'+
-                '<tr>'+
-                '<td><strong> Santiago Canyon College</strong></td>'+
-                '<td>A.A. Liberal Arts Math</td>'+
-                '<td>2020-2022'+
-                '</tr>'+
-                '</table>'+
+                 <table>
+                 <tr>
+                 <td><strong>UC Irvine </strong></td>
+                 <td>B.S. Computer Science - Expected Graduation 2025</td>
+                 </tr>
+                 <tr>
+                 <td><strong> Santiago Canyon College</strong></td>
+                 <td>A.A. Lib. Arts Math 2020-2022</td>
+                 <td></td>
+                 </tr>
+                 </table>
 
-                '<h3>Technical Skills</h3>'+
-                '<ul><strong>LANGUAGES</strong>'+
-                '<li>C++ | Python | Java | HTML CSS</li>'+
-                '</ul>'+
-                '<ul><strong>TOOLS</strong>'+
-                '<li>GitHub | Unity | Unreal | Aseprite</li>'+
-                '</ul>'+
+                 <h3>Technical Skills</h3>
+                 <ul><strong>LANGUAGES</strong>
+                 <li>C++ | Python | Java | HTML CSS</li>
+                 </ul>
+                 <ul><strong>TOOLS</strong>
+                 <li>GitHub | Unity | Unreal | Aseprite</li>
+                 </ul>
 
-                '<h3>Course Work</h3>'+
-                '<ul>'+
-                '<li>Data Structures and Algorithms</li>'+
-                '<li>Computer Architecture - x86 MASM (Irvine)</li>'+
-                '<li>EA internship</li>'+
-                '<li>Google Kotlin Certificate</li>'+
-                '</ul>';
+                 <h3>Course Work</h3>
+                 <ul>
+                 <li>Data Structures and Algorithms</li>
+                 <li>Computer Architecture - x86 MASM (Irvine)</li>
+                 <li>EA internship</li>
+                 <li>Google Kotlin Certificate</li>
+                 </ul>`;
 
 
-var contactHTML ='<p><center>Please email Felipe@FGomez.Dev with any questions.</center> </p>';
-
+var contactHTML = '<p><center>Please email Felipe@FGomez.Dev with any questions.</center> </p>';
+var projectHTML = `<ul>
+                    <li><a href="Projects//Bladesmithing//smithing.html" target="blank"> BLADESMITHING</a></li>
+                   </ul>`
 
 
 function loadResume(){
@@ -119,7 +123,18 @@ function loadContact(){
     contentHeader.innerHTML = "CONTACT";
     contentHTML.innerHTML = contactHTML;
     openSound.play();
-    focusIndex =2;  //update the index so that the user can click or use arrows
+    focusIndex = 2;  //update the index so that the user can click or use arrows
+    showIcon(focusIndex);
+    document.getElementById("content").scrollTo(0,0);
+    document.getElementById("homeImage").hidden =true;
+}
+
+
+function loadProject(){
+    contentHeader.innerHTML = "PROJECTS";
+    contentHTML.innerHTML = projectHTML;
+    openSound.play();
+    focusIndex = 3;
     showIcon(focusIndex);
     document.getElementById("content").scrollTo(0,0);
     document.getElementById("homeImage").hidden =true;
@@ -149,7 +164,7 @@ function navRight(){
 }
 
 function navLeft(){
-     if(focusIndex >0){
+     if(focusIndex > 0){
         focusIndex--;
     }else{
         focusIndex= 0;
@@ -205,10 +220,10 @@ function checkInput(event) {
     //press left
     if (event.keyCode == '37') {
         //limit index
-        if(focusIndex >0){
+        if(focusIndex > 0){
             focusIndex--;
         }else{
-            focusIndex= 0;
+            focusIndex = 0;
         }
         navigateSound.play();
         menuLinks[focusIndex].focus();
@@ -230,7 +245,7 @@ function checkInput(event) {
 
 
 function showIcon(index){
-    for(let i = 0; i < 3; i++){
+    for(let i = 0; i < menuLinks.length; i++){
         menuIcons[i].src = "images/PointerStill_Blank.png";
     }
     menuIcons[index].src= "images/PointerStill.png";
@@ -240,5 +255,3 @@ function onLoad(){
     document.getElementById("navMenu").focus();
     showIcon(0);
 }
-
-

@@ -200,6 +200,7 @@ img{
   height:3em;
   padding: 1em 1em 1em 2em;
 }
+
 .abImgA{
   align-items: center;
   background-color: var(--snesLGrey);
@@ -209,6 +210,7 @@ img{
   height:3em;
   padding: 1em 2em 1em 1em;
 }
+
 .abCaption{
   display:block;
   color: var(--logoColor);

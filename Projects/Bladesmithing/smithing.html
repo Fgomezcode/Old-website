@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>BLADESMITH CHALLENGE</title>
+  </head>
+
+  <body>
+    <!-- Top Information -->
+    <div class="DisplayDiv" id="PageInfo">
+      <h1>BLADESMITH CHALLENGE</h1>
+      <p>
+        Generate Blade Smithing Parameters and see if you can beat the clock.
+      </p>
+    </div>
+
+    <div class="DisplayDiv" id="GenerateDisplay">
+      <div class="RoundDiv">
+        <h2>GENERATE KNIFE PARAMETERS</h2>
+        <p>
+          Clicking this button will generate the parameters for your knife. They
+          are locked in and revealed in two rounds. Treat this like 'Forged in
+          Fire', some of the combinations may not be aesthetically pleasing but
+          the point is to complete the task given to you.
+        </p>
+        <button
+          class="actionButton"
+          id="generateButton"
+          onclick="generateParameters()"
+        >
+          READY
+        </button>
+      </div>
+    </div>
+
+    <div class="DisplayDiv" id="ParameterDisplay">
+      <div class="RoundDiv" id="RoundOneDiv">
+        <h2 class="ParameterHeader">ROUND ONE PARAMETERS</h2>
+        <p id="roundOneParameters">R1 HOLDER</p>
+        <button
+          class="actionButton"
+          id="roundOneButton"
+          onclick="displayRoundOne();"
+        >
+          BEGIN ROUND ONE
+        </button>
+
+        <h1 class="timerText" id="RoundOneTimer">03:05:00</h1>
+      </div>
+
+      <div class="RoundDiv" id="RoundTwoDiv">
+        <h2 class="ParameterHeader">ROUND TWO PARAMETERS</h2>
+        <p id="roundTwoParameters">R2 HOLDER</p>
+        <button
+          class="actionButton"
+          id="roundTwoButton"
+          onclick="displayRoundTwo();"
+        >
+          BEGIN ROUND TWO
+        </button>
+
+        <h1 class="timerText" id="RoundTwoTimer">02:05:00</h1>
+      </div>
+
+      <div id="ResetDiv">
+        <button class="actionButton" id="resetButton" onclick="resetPage()">
+          RESET
+        </button>
+        <button class="actionButton" id="skipButton" onclick="skipTimers()">
+          SKIP TIMERS
+        </button>
+      </div>
+
+      <div class="RoundDiv" id="InformationDiv">
+        <h2>GLOSSARY LINKS</h2>
+        <p>Click on a term to learn more.</p>
+        <div id="TableDiv"></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
