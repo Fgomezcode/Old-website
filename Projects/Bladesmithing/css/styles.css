@@ -159,7 +159,7 @@ h2 {
 
 /*------------------ CHANGING RESOLUTION ----------------------------------------------*/
 /*=====================================================================================*/
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
   .RoundPrompt {
     font-size: auto;
   }
@@ -183,11 +183,36 @@ h2 {
     font-size: auto;
     text-decoration: none;
   }
-}
+
 
 a {
   color: black;
   font-size: 10px;
   font-weight: bolder;
   text-decoration: none;
+}
+
+
+#PageInfo {
+  
+  font-size: auto;
+  text-align: center;
+  word-break: keep-all;
+  width: 100%;
+}
+/*Display Styling*/
+.DisplayDiv {
+  border-radius: 10px;
+  background-color: #5c5470;
+  text-align: center;
+
+  margin-bottom: 5%;
+
+  margin-left: 15%;
+  margin-right: 15%;
+
+  padding: 5%;
+  width: 100%;
+}
+
 }
