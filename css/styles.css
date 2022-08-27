@@ -328,10 +328,10 @@ img{
   }
   
   .navLink{
-    font-size: .75rem;
-    margin: 0 .5em;
+    font-size: 80%;
+    margin: 0 ;
     text-align: center;
-
+    padding: 0;
   }
   
   .navLink > img{
