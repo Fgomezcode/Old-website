@@ -4,15 +4,15 @@ body {
 }
 
 #PageInfo {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 20px;
+  
+  font-size: auto;
   text-align: center;
   word-break: keep-all;
   width: auto;
 }
 
 #PageInfo h1 {
+  font-size: auto;
   text-align: center;
   text-decoration: overline underline;
   color: white;
@@ -23,10 +23,13 @@ body {
   border-radius: 10px;
   background-color: #5c5470;
   text-align: center;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
+
+  margin-bottom: 5%;
+
+  margin-left: 15%;
+  margin-right: 15%;
+
+  padding: 5%;
   width: auto;
 }
 
@@ -35,23 +38,23 @@ body {
   color: black;
   border-radius: 10px;
   background-color: white;
-  padding: 1rem;
-  margin: 0rem 2rem 2rem;
+  padding: 2%;
+  margin: 0 5% 5%;
   animation: dropDown 0.75s ease-in-out forwards 1;
 }
 
 .RoundPrompt {
-  font-size: 2rem;
+  font-size: auto;
 }
 
 #roundParams {
-  font-size: 2rem;
+  font-size: auto;
   list-style: none;
   word-break: keep-all;
 }
 
 #roundOneExtras {
-  font-size: 2rem;
+  font-size: auto;
   list-style: none;
   justify-content: center;
   word-break: keep-all;
@@ -60,36 +63,36 @@ body {
 #ResetDiv {
   text-align: center;
   width: auto;
-  height: 3rem;
-  margin: 0rem 4rem 2rem;
+  height: auto;
+  margin: 10px;
 }
 
 /*Button Styling*/
 .actionButton {
-  font-size: 1rem;
+  font-size: auto;
   border-style: solid;
   font-weight: bolder;
-  height: 4em;
-  width: 16rem;
+  height: auto;
+  width: auto;
   margin: auto;
   border-radius: 15px;
 }
 
 #resetButton {
   background-color: red;
-  height: 2rem;
-  width: 8rem;
+  height: auto;
+  width: auto;
 }
 #skipButton {
   background-color: gold;
-  height: 2rem;
-  width: 8rem;
+  height: auto;
+  width: auto;
 }
 
 .timerText {
   text-align: center;
   color: red;
-  font-size: 5rem;
+  font-size: auto;
   text-decoration: none;
 }
 
@@ -122,7 +125,7 @@ body {
 .GlossaryCell {
   background-color: #dbd8e3;
   word-wrap: normal;
-  padding: 1rem;
+  padding: 5%;
   border: 2px solid;
 }
 .GlossaryCell:hover {
@@ -132,7 +135,7 @@ body {
 /*GLOSSARY LINKS AND HYPERLINKS*/
 a {
   color: black;
-  font-size: 100%;
+  font-size: auto;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -158,17 +161,17 @@ h2 {
 /*=====================================================================================*/
 @media only screen and (max-width: 300px) {
   .RoundPrompt {
-    font-size: 1rem;
+    font-size: auto;
   }
 
   #roundParams {
-    font-size: 1.5rem;
+    font-size: auto;
     list-style: none;
     word-break: keep-all;
   }
 
   #roundOneExtras {
-    font-size: 1.5rem;
+    font-size: auto;
     list-style: none;
     word-break: keep-all;
     text-align: left;
@@ -177,8 +180,14 @@ h2 {
   .timerText {
     text-align: center;
     color: red;
-    font-size: 3rem;
+    font-size: auto;
     text-decoration: none;
   }
 }
 
+a {
+  color: black;
+  font-size: 10px;
+  font-weight: bolder;
+  text-decoration: none;
+}
