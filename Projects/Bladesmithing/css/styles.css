@@ -1,6 +1,7 @@
 body {
   background-color: #1b2430;
   color: white;
+  
 }
 
 #PageInfo {
@@ -198,21 +199,21 @@ a {
   font-size: auto;
   text-align: center;
   word-break: keep-all;
-  width: 100%;
 }
+
 /*Display Styling*/
 .DisplayDiv {
   border-radius: 10px;
   background-color: #5c5470;
   text-align: center;
-
-  margin-bottom: 5%;
-
-  margin-left: 15%;
-  margin-right: 15%;
-
-  padding: 5%;
-  width: 100%;
 }
+
+.GlossaryCell {
+  background-color: #dbd8e3;
+  word-wrap: normal;
+  padding: 2%;
+  border: 2px solid;
+}
+
 
 }
