@@ -40,8 +40,8 @@ var menuHTML= ` <div id="navContainer">
                 </table>
                 </div>`;
 
-var aboutHTML = `<p >My name is Felipe Gomez'+
-                Villalobos, I currently attend UC Irvine in California. I am
+var aboutHTML = `<p >My name is Felipe Gomez Villalobos,
+                I currently attend UC Irvine in California. I am
                 pursuing a degree in Computer Science, and expect to complete my studies Winter 2025
                 </p>
                 <p>
@@ -50,7 +50,7 @@ var aboutHTML = `<p >My name is Felipe Gomez'+
                 </p>
                 <p>
                 I spend the majority of my time studying data structures, making simple 
-                games using Unity Game Engine and Unreal Engine.'+
+                games using Unity Game Engine and Unreal Engine.
                 I also enjoy doing frontend web design for friends and family in my spare time.
                 </p>`;
 
