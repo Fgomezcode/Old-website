@@ -360,7 +360,7 @@ function generateInformation() {
     }
     newHTML += `<td class="GlossaryCell"><a href="https://www.google.com/search?q=${handleMaterials[i]} Knife Making" target="blank">${handleMaterials[i]}</a></td>`;
     counter++;
-    if (counter > 2) {
+    if (counter > 5) {
       newHTML += `<tr ></tr>`;
       counter = 0;
     }
@@ -378,7 +378,7 @@ function generateInformation() {
       newHTML += `<td class="GlossaryCell"><a href="https://www.google.com/search?q=${styles[i][j]} Knife Making" target="blank">${styles[i][j]}</a></td>`;
       counter++;
 
-      if (counter > 2) {
+      if (counter > 5) {
         newHTML += `<tr ></tr>`;
         counter = 0;
       }
