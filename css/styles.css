@@ -117,7 +117,7 @@ img{
   padding: .5em;
   margin: 0 1em;  
   margin-bottom:1em;
-  padding-top: 1em;
+  padding-top: .5em;
   width: 90%;
 }
 
@@ -262,7 +262,7 @@ img{
 /* ===========================================================*/
 /* ===========================================================*/
 /* ===========================================================*/
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1200px) {
   .navLink > img{
     text-align: center;
     image-rendering: auto;
@@ -320,7 +320,6 @@ img{
 /* ===========================================================*/
 @media only screen and (max-width:800px) {
   #body{  
-    
     width: 85%;
   }
   
