@@ -115,8 +115,8 @@ function displayRoundOne() {
   roundOneInfo.innerHTML = roundOneDisplay + parameters.roundOneExtras;
   console.log(roundTimes[0]);
 
-  //CHANGE THIS TO -> r1Seconds = roundOneTime;------------------------------------
-  r1Seconds = roundOneTime;
+  //CHANGE THIS TO -> r1Seconds = roundOneTime;-----
+  r1Seconds = 1;
   // -------------------------------------------
 
   roundOneCountdownTimer = setInterval("roundOneTimer()", 1000);
@@ -191,8 +191,8 @@ function displayRoundTwo() {
   var roundTwoDisplay = `<p class="RoundPrompt" >Your handle must be composed of <strong> ${parameters.materialChoice} </strong> and must be compatible with <strong> ${parameters.tangChoice}</strong> construction.</p>`;
   roundTwoInfo.innerHTML = roundTwoDisplay + parameters.roundTwoExtras;
 
-  //CHANGE THIS TO -> r2Seconds = roundTwoTime;-------------------------------
-  r2Seconds = roundTwoTime;
+  //CHANGE THIS TO -> r2Seconds = roundTwoTime;---
+  r2Seconds = 1;
   // -------------------------------------------
 
   roundTwoCountdownTimer = setInterval("roundTwoTimer()", 1000);

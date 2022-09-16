@@ -11,12 +11,24 @@
   --logoColor:#4f43ae;
 }
 
+#resumeLinks{
+  padding-bottom: 3%;
+}
+#resumeLinks a {
+  font-size: 14px;
+  margin: 10%;
+}
 a:focus {
  outline: none;
 }
 
 ::-webkit-scrollbar {
 width: 10px;
+}
+
+/*PROJECT LIST PADDING*/
+li{
+  padding: 10px;
 }
 
 /* Track */
